@@ -95,6 +95,7 @@ var myShakeEvent = new Shake({
 myShakeEvent.start()
 
 window.addEventListener('shake', shakeEventDidOccur, false);
+window.addEventListener('touchstart', shakeEventDidOccur, false);
 
 //function to call when shake occurs
 function shakeEventDidOccur() {

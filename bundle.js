@@ -227,6 +227,7 @@ var myShakeEvent = new Shake({
 myShakeEvent.start()
 
 window.addEventListener('shake', shakeEventDidOccur, false);
+window.addEventListener('touchstart', shakeEventDidOccur, false);
 
 //function to call when shake occurs
 function shakeEventDidOccur() {
@@ -234,4 +235,6 @@ function shakeEventDidOccur() {
     //put your own code here etc.
     alert('shake!');
 }
+
+//another push
 },{"shake.js":1}]},{},[2]);
